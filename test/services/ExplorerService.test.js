@@ -1,3 +1,4 @@
+
 const ExplorerService = require('./../../lib/services/ExplorerService')
 
 describe('Pruebas para la clase ExplorerService',() => {
@@ -17,10 +18,14 @@ describe('Pruebas para la clase ExplorerService',() => {
     })
 
     test('Prueba 3: Obteniendo los username de los explorers en la mission ', () => {
-        const explorers = Reader.readJsonFile("explorers.json");
+        const explorers = [
+            { githubUsername: "brandonruizmora", mission: "node" },
+            { githubUsername: "carlo", mission: "node" },
+            { githubUsername: "ferch", mission: "java" },
+        ]
         const ExplorersMissionNames = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
 
-        expect(ExplorersMissionNames).toContain('ajolonauta1')
+        expect(ExplorersMissionNames[0]).toBe('brandonruizmora')
     })
 
 
