@@ -14,7 +14,13 @@ describe('Pruebas para la clase ExplorerService',() => {
         const explorersInMission = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
         expect(explorersInMission).toBe(1)
+    })
 
+    test('Prueba 3: Obteniendo los username de los explorers en la mission ', () => {
+        const explorers = Reader.readJsonFile("explorers.json");
+        const ExplorersMissionNames = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+
+        expect(ExplorersMissionNames).toContain('ajolonauta1')
     })
 
 
