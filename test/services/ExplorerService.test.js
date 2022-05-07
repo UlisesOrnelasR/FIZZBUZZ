@@ -13,6 +13,8 @@ describe('Pruebas para la clase ExplorerService',() => {
         const explorers = [{mission: 'node'}]
         const explorersInMission = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
+        expect(explorersInMission).toBe(1)
+
     })
 
 
