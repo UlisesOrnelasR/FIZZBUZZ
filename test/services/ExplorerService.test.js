@@ -10,7 +10,7 @@ describe('Pruebas para la clase ExplorerService',() => {
     })
 
     test('Prueba 2: Obteniendo cuántos explorers estan en la mission', () => {
-        const explorers = const explorers = [{mission: 'node'}]
+        const explorers = [{mission: 'node'}]
         const explorersInMission = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
     })
