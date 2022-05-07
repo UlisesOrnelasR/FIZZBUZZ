@@ -14,8 +14,13 @@ describe('Pruebas para FizzbuzzService', () => {
         FizzbuzzService.applyValidationInExplorer(explorer2)
 
         expect(explorer2).toEqual({name: 'Explorer2', score: 3, trick: 'FIZZ'})
-        
+    })
 
+    test('Test para cuando la llave de trick sea BUZZ  ', () => {
+        const explorer3 = {name: "Explorer3", score: 5}
+        FizzbuzzService.applyValidationInExplorer(explorer3)
+
+        expect(explorer3).toEqual({name: 'Explorer3', score: 5, trick: 'BUZZ'})
     })
 
 
