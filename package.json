@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/UlisesOrnelasR/FIZZBUZZ#readme",
   "devDependencies": {
-    "jest": "^28.0.3"
+    "jest": "^26.0.0"
   }
 }
