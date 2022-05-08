@@ -30,4 +30,9 @@ describe("Pruebas para FizzbuzzService", () => {
         expect(Explorer4).toEqual({name: "Explorer4", score: 15, trick: "FIZZBUZZ"});
     });
 
+    test('Test para probar nuevo metodo de Fizzbuzz service con un numero', () => {
+        const result = FizzbuzzService.applyValidationInNumber(9)
+
+        expect(result).toBe('FIZZ')
+    })
 });
