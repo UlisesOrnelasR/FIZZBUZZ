@@ -20,5 +20,11 @@ describe("Pruebas para ExplorerController", () => {
 
         expect(explorers).toBe(10);
     });
-    
+
+    test('Prueba 4 probando la funcionalidad de fizzbuzz ingresando un numero',() => {
+        const result = ExplorerController.getfizzbuzz(15)
+
+        expect(result).toBe('FIZZBUZZ')
+    })
+     
 }); 
