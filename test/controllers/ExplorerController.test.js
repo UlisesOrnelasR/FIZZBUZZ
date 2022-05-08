@@ -16,9 +16,9 @@ describe('Pruebas para ExplorerController', () => {
     })
 
     test('Prueba 3 probando el metodo getExplorersAmonutByMission que regresa la cantidad de explorers en la mission', () => {
-        const NumExplorersInMission = ExplorerService.getExplorersAmonutByMission('node')
+        const explorers = ExplorerController.getExplorersAmonutByMission('node')
 
-        expect(NumExplorersInMission).toBe(10)
+        expect(explorers).toBe(10)
     })
     
 }) 
