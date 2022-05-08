@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/UlisesOrnelasR/FIZZBUZZ#readme",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^26.0.0"
   }
 }
